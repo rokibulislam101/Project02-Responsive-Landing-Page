@@ -31,7 +31,7 @@ span {
 }
 
 .navber .logo .logo-title {
-    font-size: 100%;
+    font-size: 2em;
   }
 
 .navber .responsive-icon {
@@ -189,12 +189,27 @@ section {
   gap: 24px;
 }
 
-.destination .col-4 .img img {
+.destination .col-4 .img .image {
+  position: relative;
+  width: 100%;
+}
+
+.destination .col-4 .img .image img {
   width: 100%;
   height: 300px;
 }
 
-/* Destination Section Design */
+.destination .col-4 .img .image .itext {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  font-size: 1.5em;
+  transform: translate(-50%, -50%);
+}
+
+/* Choose Section Design */
 .choose .choose-text {
   text-align: center;
 }
@@ -298,8 +313,25 @@ section {
   width: 100%;
 }
 
+.news-body .col-2 {
+  position: relative;
+}
+
 .news-body .col-2 img {
   width: 100%;
+}
+
+.news-body .col-2 .text {
+  position: absolute;
+  padding: 3% 5%;
+  color: #fff;
+  text-align: center;
+  background-color: #FF5400;
+  border-radius: 8px;
+  left: 60%;
+  top: 55%;
+  font-size: 1.5em;
+  transform: rotate(-45deg);
 }
 
 /* Footer Section Design */
@@ -431,6 +463,10 @@ section {
   .navber .logo img {
   width: 20%;
 }
+
+  .navber .logo .logo-title {
+    font-size: 1.5em;
+  }
 
   .navber .nav-items .nav-list .nav-link {
   font-size: 16px;
