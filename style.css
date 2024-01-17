@@ -16,7 +16,7 @@ span {
 
 /* Navber Design */
 .navber {
-  margin: 0px 160px;
+  margin: 0% 9%;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,15 @@ span {
   align-items: center;
   gap: 16px;
 }
+
+.navber .logo .logo-title {
+    font-size: 100%;
+  }
+
+.navber .responsive-icon {
+  display: none;
+}
+
 .navber .nav-items {
   list-style: none;
   display: flex;
@@ -46,10 +55,10 @@ span {
 
 /* Home Section Design */
 .home {
-  /* width: 100%; */
   height: 80vh;
   margin-top: 2%;
   background-image: url('/Images/Group 13.png');
+  background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -73,7 +82,7 @@ span {
 }
 
 .home .h-body .h-add {
-  padding: 16px 16px;
+  padding: 2% 2%;
   margin-top: 24px;
   display: flex;
   justify-content: space-around;
@@ -86,8 +95,9 @@ span {
 .home .h-body .h-add .h-place{
   width: 174px;
   height: 52px;
+  padding: 0 3%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
@@ -105,26 +115,9 @@ span {
   gap: 8px;
 }
 
-@media screen and (max-width: 576px) {
-  .home .h-body .h-title {
-  font-size: 40px;
-}
-
-.home .h-body .h-par {
-  font-size: 16px;
-  padding: 0 20%;
-}
-
-.home .h-body .h-add {
-  padding: 16px 16px;
-  margin-top: 24px;
-  display: block;
-  gap: 16px;
-}
-}
 /* Title Paragraph Button Design */
 section {
-  margin: 5% 9%;
+  margin: 7% 9%;
 }
 
 .title {
@@ -151,7 +144,6 @@ section {
 
 /* About Section Design */
 .about {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,6 +155,7 @@ section {
 }
 
 .about .a-body .col-1 {
+  width: 70%;
   padding-right: 10%;
 }
 
@@ -173,6 +166,10 @@ section {
 .col-1 ul li {
   margin-top: 20px;
   list-style-position: inside;
+}
+
+.a-body .col-2 img {
+  width: 100%;
 }
 
 /* Destination Section Design */
@@ -238,7 +235,6 @@ section {
 
 /* Simple Section Design */
 .simple {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,8 +261,7 @@ section {
 
 /* Newsletter Section Design */
 .newsletter {
-  height: 80vh;
-  margin: 0 9%;
+  margin: 7% 9%;
 }
 
 .newsletter .news-body {
@@ -332,4 +327,187 @@ section {
 
 .f-body hr {
   margin: 0 9%;
+}
+
+/* Small Veiw */
+@media screen and (max-width: 576px) {
+  .navber .responsive-icon {
+  display: block;
+}
+  .navber .nav-items {
+    display: none;
+  }
+
+  .navber .logo img {
+  width: 20%;
+}
+
+  .navber .nav-items .nav-list .nav-link {
+  font-size: 16px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.home {
+    margin-top: 0;
+  }
+  
+.home .h-body .h-title {
+  font-size: 40px;
+}
+
+.home .h-body .h-par {
+  font-size: 16px;
+  padding: 0 10%;
+}
+
+.home .h-body .h-add {
+  margin: 5% 10%;
+  display: block;
+}
+
+.home .h-body .h-add .h-place,
+.home .h-body .h-add .h-place01 {
+  width: 100%;
+  margin-top: 2%;
+  padding: 0 5%;
+}
+
+.about .a-body {
+  display: block;
+}
+  .about .a-body .col-1 {
+  width: 100%;
+  padding-right: 0;
+}
+  .a-body .col-2 img {
+  margin-top: 24px;
+}
+
+.destination .col-4 .img {
+  margin-top: 0;
+  display: block;
+}
+
+.destination .col-4 .img img {
+  margin-top: 24px;
+}
+
+.choose-body .twin-1 {
+  display: block;
+}
+
+  .choose-body .twin-1> .card {
+  margin-top: 24px;
+}
+
+  .choose-body .twin-2 {
+  padding: 0 0;
+}
+
+.simple .s-body {
+  display: block;
+}
+  .simple .s-body .col-1 {
+  padding-right: 0;
+}
+  .s-body .col-2 video {
+  margin-top: 24px;
+}
+
+.newsletter .news-body {
+  display: block;
+}
+.news-body .col-2 img {
+  margin-top: 24px;
+}
+.f-body .par{
+  padding: 0 10%;
+}
+}
+
+/*  Medium Veiw */
+@media screen and (max-width: 768px) {
+  .navber .logo img {
+  width: 20%;
+}
+
+  .navber .nav-items .nav-list .nav-link {
+  font-size: 16px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.home .h-body .h-title {
+  font-size: 40px;
+}
+
+.home .h-body .h-par {
+  font-size: 16px;
+  padding: 0 10%;
+}
+
+.home .h-body .h-add {
+  margin: 5% 10%;
+  display: block;
+}
+
+.home .h-body .h-add .h-place,
+.home .h-body .h-add .h-place01 {
+  width: 100%;
+  margin-top: 2%;
+  padding: 0 5%;
+}
+
+.about .a-body {
+  display: block;
+}
+  .about .a-body .col-1 {
+  width: 100%;
+  padding-right: 0;
+}
+  .a-body .col-2 img {
+  margin-top: 24px;
+}
+
+.destination .col-4 .img {
+  margin-top: 0;
+  display: block;
+}
+
+.destination .col-4 .img img {
+  margin-top: 24px;
+}
+
+.choose-body .twin-1 {
+  display: block;
+}
+
+  .choose-body .twin-1> .card {
+  margin-top: 24px;
+}
+
+  .choose-body .twin-2 {
+  padding: 0 0;
+}
+
+.simple .s-body {
+  display: block;
+}
+  .simple .s-body .col-1 {
+  padding-right: 0;
+}
+  .s-body .col-2 video {
+  margin-top: 24px;
+}
+
+.newsletter .news-body {
+  display: block;
+}
+.news-body .col-2 img {
+  margin-top: 24px;
+}
+.f-body .par{
+  padding: 0 10%;
+}
 }
