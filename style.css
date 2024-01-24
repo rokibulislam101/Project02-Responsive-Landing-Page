@@ -276,11 +276,11 @@ section {
 
 /* Welcome Section Design */
 .welcome {
-  padding: 15% 10%;
+  padding: 10% 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff5500cf;
+  background-color: #ff5500c6;
   border-radius: 30px;
 }
 
@@ -290,6 +290,7 @@ section {
 
 .welcome .w-body .title {
   color: #fff;
+  margin-top: 3%;
 }
 
 /* Newsletter Section Design */
